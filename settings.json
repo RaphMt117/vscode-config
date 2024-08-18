@@ -58,9 +58,6 @@
     "zenMode.silentNotifications": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.centerLayout": true,
-
-    // workbench
-    "workbench.iconTheme": "catppuccin-perfect-mocha",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "terminal",
     "workbench.list.smoothScrolling": true,
@@ -74,7 +71,7 @@
     "workbench.editor.mouseBackForwardToNavigate": false,
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.tabSizing": "fit",
-    "workbench.colorTheme": "Abyss",
+    "workbench.colorTheme": "Vesper ++",
     "workbench.activityBar.location": "hidden",
     "workbench.preferredDarkColorTheme": "Abyss",
     "workbench.statusBar.visible": true,
@@ -334,11 +331,6 @@
         "vscodevim.vim": 1
     },
     "vim.smartRelativeLine": true,
-    "symbols.hidesExplorerArrows": true,
-    "symbols.files.associations": {
-        "*.guard.ts": "typescript",
-        ".env.example": "gear"
-    },
     "files.associations": {
         ".env.*": "dotenv",
         ".prettierrc": "json",
@@ -349,6 +341,7 @@
     "window.density.editorTabHeight": "compact",
     "window.zoomLevel": 1,
     "window.menuBarVisibility": "toggle",
-    "github.copilot.editor.enableAutoCompletions": true
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.iconTheme": "catppuccin-perfect-dark"
     //------------------------------------------------------------------------------------/vim
 }
