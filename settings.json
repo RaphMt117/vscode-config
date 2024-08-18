@@ -1,0 +1,354 @@
+{
+    // fix 'Unable to load schema'
+    "json.schemaDownload.enable": true,
+
+    // prettier eslint config for auto format on save (js)
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnType": false, // required
+    "editor.formatOnPaste": true, // optional
+    "editor.formatOnSave": true, // optional
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "onFocusChange", // optional but recommended
+    "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
+
+    // explorer
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": true,
+    "explorer.expandSingleFolderWorkspaces": true,
+    "explorer.sortOrder": "foldersNestsFiles",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+        "tailwind.config.js": "tailwind.config*, postcss.config*",
+        ".env.local": ".env*",
+        ".env": ".env*"
+    },
+
+    // live server
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    // terminal
+    "terminal.external.linuxExec": "zsh",
+    "terminal.external.windowsExec": "%LocalAppData%\\Microsoft\\WindowsApps\\wt.exe",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
+    "terminal.integrated.showExitAlert": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.explorerKind": "external",
+
+    // window
+    "window.newWindowDimensions": "maximized",
+    "window.titleBarStyle": "custom",
+
+    // files
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/.git": true,
+        ".vscode": true,
+        "node_modules": true
+    },
+    "breadcrumbs.enabled": false,
+
+    // zen mode
+    "zenMode.silentNotifications": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.centerLayout": true,
+
+    // workbench
+    "workbench.iconTheme": "catppuccin-perfect-mocha",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "terminal",
+    "workbench.list.smoothScrolling": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#101010",
+        "statusBar.noFolderBackground": "#101010",
+        "statusBar.debuggingBackground": "#101010"
+    },
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.mouseBackForwardToNavigate": false,
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.tabSizing": "fit",
+    "workbench.colorTheme": "Abyss",
+    "workbench.activityBar.location": "hidden",
+    "workbench.preferredDarkColorTheme": "Abyss",
+    "workbench.statusBar.visible": true,
+
+    // editor
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "diffEditor.codeLens": true,
+    "diffEditor.wordWrap": "on",
+    "editor.fontLigatures": false,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "'Iosevka Nerd Font Mono', monospace",
+    "editor.mouseWheelZoom": true,
+    "editor.lineNumbers": "on",
+    "editor.cursorSurroundingLines": 4,
+    "editor.cursorSurroundingLinesStyle": "all",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.quickSuggestions": {
+        "comments": "inline",
+        "strings": "on"
+    },
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.suggest.preview": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggest.showStatusBar": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.guides.bracketPairs": true,
+    "editor.codeLensFontFamily": "Iosevka Nerd Font Mono",
+    "editor.detectIndentation": false,
+    "editor.stickyTabStops": true,
+    "editor.padding.bottom": 8,
+    "editor.renderLineHighlight": "all",
+    "editor.padding.top": 60,
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.vertical": "auto",
+
+    // APC
+    "apc.electron": {
+        "titleBarStyle": "hiddenInset",
+        "frame": false
+    },
+    "apc.font.family": "Iosevka",
+    "apc.header": {
+        "height": 25
+    },
+    "apc.listRow": {
+        "height": 24
+    },
+    "apc.stylesheet": {
+        ".title-label > h2": "display: none",
+        ".editor-actions": "display: none",
+        ".nosidebar .inline-tabs-placeholder": "width: 75px",
+        ".pane-header": "padding: 0 8px",
+        ".pane-body": "padding: 8px",
+        ".split-view-view:first-child .pane-header": "display: none !important;",
+        ".monaco-list-row": "border-radius: 4px;",
+        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+    },
+
+    // git
+    "git.autofetch": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.defaultDateLocale": null,
+    "gitlens.showWelcomeOnInstall": false,
+    "git.allowNoVerifyCommit": true,
+    "git.closeDiffOnOperation": true,
+    "git.enableSmartCommit": true,
+    "git.confirmEmptyCommits": true,
+    "git.mergeEditor": true,
+    "git.openAfterClone": "alwaysNewWindow",
+    "git.showPushSuccessNotification": true,
+
+    // Prettier
+    "prettier.tabWidth": 4,
+    "prettier.bracketSameLine": true,
+    "prettier.bracketSpacing": false,
+    "prettier.endOfLine": "auto",
+    "prettier.semi": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.printWidth": 80,
+    "prettier.singleQuote": true,
+    "prettier.singleAttributePerLine": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // Live share
+    "liveshare.showInStatusBar": "whileCollaborating",
+
+    // vim
+    "vim.leader": "<Space>",
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    // Normal mode
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // -----------navigation-------------------
+        //buffers
+        {"before": ["<S-k>"], "commands": [":bprevious"]},
+        {"before": ["<S-j>"], "commands": [":bnext"]},
+
+        // split screen
+        {"before": ["leader", "v"], "commands": [":vsplit"]},
+        {"before": ["leader", "h"], "commands": [":split"]},
+
+        //panes
+        {"before": ["C-h"], "commands": ["workbench.action.focusLeftGroup"]},
+        {"before": ["C-j"], "commands": ["workbench.action.focusBelowGroup"]},
+        {"before": ["C-k"], "commands": ["workbench.action.focusAboveGroup"]},
+        {"before": ["C-l"], "commands": ["workbench.action.focusRightGroup"]},
+
+        //--------------File Tree-----------------
+        // open and chose file
+        {
+            "before": ["leader", "1"],
+            "commands": ["workbench.explorer.fileView.focus"]
+        },
+        // show and hide sidebars
+        {
+            "before": ["leader", "2"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        // quick actions
+        {
+            "before": ["leader", "3"],
+            "commands": ["workbench.action.quickOpenView"]
+        },
+
+        // ---------------extra----------------------------------
+        // close window
+        {
+            "before": ["leader", "0"],
+            "commands": ["workbench.action.closeWindow"]
+        },
+        // save current file
+        {
+            "before": ["leader", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        // close pane
+        {
+            "before": ["leader", "q"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        // markdown preview
+        {
+            "before": ["leader", "m", "d"],
+            "commands": ["markdown.showPreviewToSide"]
+        },
+
+        //------quick open----------
+        // search files in current workspace
+        {
+            "before": ["leader", "leader"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        // open file
+        {
+            "before": ["leader", "f", "i"],
+            "commands": ["workbench.action.files.openFile"]
+        },
+        // open folder
+        {
+            "before": ["leader", "f", "o"],
+            "commands": ["workbench.action.files.openFolder"]
+        },
+        // open todos
+        {
+            "before": ["leader", "t", "d"],
+            "commands": ["workbench.view.extension.todo-tree-container"]
+        },
+        // open git command list
+        {
+            "before": ["leader", "g", "l"],
+            "commands": ["gitlens.gitCommands"]
+        },
+        // git commit
+        {
+            "before": ["leader", "g", "c"],
+            "commands": ["extension.vscode-git-automator.addAndCommitAllFiles"]
+        },
+        // git push
+        {
+            "before": ["leader", "g", "p"],
+            "commands": ["extension.vscode-git-automator.pushLocalCommits"]
+        },
+        // publish Origin to github
+        {
+            "before": ["leader", "g", "h"],
+            "commands": ["github.publish"]
+        },
+        // format file
+        {
+            "before": ["leader", "p"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        // show definition
+        {
+            "before": ["leader", "d"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        //alternar comentários em linha
+        {
+            "before": ["leader", "/"],
+            "commands": ["editor.action.commentLine"]
+        },
+        //pesquisar no arquivo atual
+        {
+            "before": ["leader", "f", "."],
+            "commands": ["actions.find"]
+        }
+        // todo: implementar busca de string por workspace (telescope)
+    ],
+
+    // ---------------------------- visual mode: -------------------------------------
+    "vim.visualModeKeyBindings": [
+        // easily move selected lines
+        {"before": ["H"], "commands": ["editor.action.outdentLines"]},
+        {"before": ["L"], "commands": ["editor.action.indentLines"]},
+        {"before": ["K"], "commands": ["editor.action.moveLinesUpAction"]},
+        {"before": ["J"], "commands": ["editor.action.moveLinesDownAction"]},
+
+        // alternar comentario nas linhas selecionadas
+        {"before": ["leader", "/"], "commands": ["editor.action.commentLine"]},
+
+        // copiar com C-c
+        {"before": ["C-c"], "commands": ["editor.action.clipboardCopyAction"]}
+    ],
+    // To improve performance
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "vim.smartRelativeLine": true,
+    "symbols.hidesExplorerArrows": true,
+    "symbols.files.associations": {
+        "*.guard.ts": "typescript",
+        ".env.example": "gear"
+    },
+    "files.associations": {
+        ".env.*": "dotenv",
+        ".prettierrc": "json",
+        "*.css": "css"
+    },
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "window.density.editorTabHeight": "compact",
+    "window.zoomLevel": 1,
+    "window.menuBarVisibility": "toggle",
+    "github.copilot.editor.enableAutoCompletions": true
+    //------------------------------------------------------------------------------------/vim
+}
